@@ -118,7 +118,7 @@ for file_name in glob.glob('/media/lalan/StudyMaterial/WorkingD/Result/SA/Bola/P
                     else:
                         BL = BL - 0.1
                         AB.append(int(lines[1]))                 
-                total = total + log(curr_bitrate/200) - abs(log(curr_bitrate/prev_bitrate))
+                total = total + log(curr_bitrate/350) - abs(log(curr_bitrate/prev_bitrate))
                 prev_bitrate = curr_bitrate
         total = (total/N) - count*0.266
         #print("{:f}".format(total), count)
