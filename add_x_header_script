@@ -1,0 +1,5 @@
+for file in *.mpd
+do
+	sed -i "4s;^;X-Original-Url: https://www.example.org/$file\n;" $file
+	echo $file
+done

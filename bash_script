@@ -1,0 +1,4 @@
+for file in `ls $PWD `; do
+	wget --save-headers -O ../Wget/$file http://127.0.0.1:8000/$file 
+	echo "File name $file"
+done 
